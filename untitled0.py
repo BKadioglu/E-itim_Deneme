@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit_player
 from streamlit_player import st_player
 
 nav = st.sidebar.radio("Navigation",["Home","Linear Regression Model"])
