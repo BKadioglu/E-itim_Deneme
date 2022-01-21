@@ -5,5 +5,7 @@ nav = st.sidebar.radio("Navigation",["Home","1st Assignment"])
 if nav == "Home":
     st.title("Data Analyst Assignments")
 elif nav == "1st Assignment":
-    df = pd.read_excel("den.xlsx")
-    st.table(df)
+   uploaded_files = st.file_uploader("Choose a CSV file", type="xlsx")
+   if uploaded_files:
+       df = pd.read_excel(uploaded_files)
+       st.table(df)
