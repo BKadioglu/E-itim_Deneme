@@ -1,8 +1,10 @@
 import streamlit as st
+from streamlit_player import st_player
+import pandas as pd
 
-
-nav = st.sidebar.radio("Navigation",["Home","Linear Regression Model"])
+nav = st.sidebar.radio("Navigation",["Home","1st Assignment"])
 if nav == "Home":
-    video_file = open(r'C:\Users\berke\OneDrive\Masaüstü\first_vid.mp4', 'rb')
-    video_bytes = video_file.read()
-    st.video(video_bytes)
+    st.title("Data Analyst Assignments")
+elif nav == "1st Assignment":
+    df = pd.read_excel(r"C:\Users\berke\OneDrive\Masaüstü\den.xlsx")
+    st.table(df)
