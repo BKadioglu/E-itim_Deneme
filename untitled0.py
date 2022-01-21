@@ -9,5 +9,5 @@ if nav == "Home":
     st.title("Data Analyst Assignments")
     st.write(den)
 elif nav == "1st Assignment":
-       df = pd.read_excel(r"/app/den.xlsx")
+       df = pd.read_excel(r"\app\den.xlsx")
        st.table(df)
