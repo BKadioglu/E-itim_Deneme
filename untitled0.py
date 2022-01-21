@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
+from pathlib import Path
 
+den = Path(__file__).parents[1] 
+print(den)
 nav = st.sidebar.radio("Navigation",["Home","1st Assignment"])
 if nav == "Home":
     st.title("Data Analyst Assignments")
