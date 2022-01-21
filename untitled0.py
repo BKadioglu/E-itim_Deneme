@@ -9,7 +9,5 @@ if nav == "Home":
     st.title("Data Analyst Assignments")
     st.write(den)
 elif nav == "1st Assignment":
-   uploaded_files = st.file_uploader("Choose a CSV file", type="xlsx")
-   if uploaded_files:
        df = pd.read_excel("/app/den.xlsx")
        st.table(df)
