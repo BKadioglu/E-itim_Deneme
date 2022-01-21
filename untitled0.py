@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_player import st_player
 import pandas as pd
 
 nav = st.sidebar.radio("Navigation",["Home","1st Assignment"])
